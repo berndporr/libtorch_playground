@@ -8,6 +8,20 @@ This is program demonstrates the use of **LibTorch** (the C++ API for PyTorch).
 * Calling `.backward()`
 * Doing a vector–Jacobian product
 
+To compile it make sure you have set the environment
+variable:
+```
+export CMAKE_PREFIX_PATH="/usr/local/libtorch/"
+```
+pointing to your libtorch installation.
+
+Then just do:
+```
+cmake .
+make
+./playground
+```
+
 ## 1. Create a tensor with gradients enabled
 
 ```cpp
