@@ -98,14 +98,11 @@ y.backward(v);
 * `y = x²` elementwise.
 * `.backward(v)` computes
 
-[
-\frac{\partial y}{\partial x}^T v
-]
+![alt tag](backwards_gen.png)
 
 * For `y = x²`,
-  [
-  \frac{dy}{dx} = 2x
-  ]
+
+![alt tag](backwards_square.png)
 
 So:
 
