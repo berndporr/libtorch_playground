@@ -4,7 +4,7 @@
 #include <assert.h>
 #include <torch/torch.h>
 
-int main(int argc, char *argv[]) {
+int main(int, char **) {
 
     auto x = torch::ones({2, 2}, torch::requires_grad());
     std::cout << x << std::endl;
@@ -46,8 +46,5 @@ int main(int argc, char *argv[]) {
     std::cout << "x.grad() = " << x.grad() << std::endl;
     std::cout << "y.grad() = " << y.grad() << std::endl;
     
-// retain_grad
-    // torch::Tensor::retain_grad
-
     return 0;
 }
